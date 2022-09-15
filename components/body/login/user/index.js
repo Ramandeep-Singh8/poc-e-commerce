@@ -30,6 +30,7 @@ function UserLoginPage() {
         email: email,
         loggedIn: true,
         role: "user",
+        
       })
     ),
       router.push("/dashboard/user");
