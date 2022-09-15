@@ -5,6 +5,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistor } from "../app/store";
 import store from "../app/store";
 import { Provider } from "react-redux";
+import { socket, io } from "socket.io-client";
+import { useState, useEffect } from "react";
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>

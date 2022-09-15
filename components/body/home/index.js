@@ -16,7 +16,7 @@ function WelcomePage() {
     }
   }, [user]);
   return (
-    <div className="d-grid gap-3 p-5 border text-center w-auto">
+    <div className="d-grid shadow-lg gap-3 p-5  text-center w-auto">
       <div className="">
         <h1>Welcome..</h1>
       </div>

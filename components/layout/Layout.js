@@ -4,14 +4,14 @@ import Content from "../content/Content";
 import Footer from "../footer/Footer";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../src/features/user/userSlice";
-function Layout({ children }) {
+function Layout({ children, socket }) {
   const user = useSelector(selectUser);
 
   return (
     <div className="container">
       {user ? (
         <>
-          <Header />
+          <Header socket={socket} />
           <Content>{children}</Content>
           <Footer />
         </>
